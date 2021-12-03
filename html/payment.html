@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <div id="longbox">
+
+        <div class="imgbox">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+        </div>
+
+        <div id="search">
+            <select id="sel">
+                <option value = ""> Deliver to <span class="blue">1011100</span> 
+                </option>
+                <option  class="val" value = "Mercedes"> Mercedes 
+                </option>
+                <option value = "Mercedes"> Mercedes 
+                </option>
+
+                </select>
+            <p class="text">
+                Search for medicine &amp; wellness products…
+            </p>
+        </div>
+        <div id="boxes">
+            <div class="b1">
+                <p>Upload RX</p>
+            </div>
+
+            <div class="b1">
+                <p>cart</p>
+            </div>
+
+
+            <div class="b1">
+                <p>Name </p>
+            </div>
+        </div>
+
+    </div>
+
+    <form class="credit-card">
+        <div class="form-header">
+            <h4 class="title">Card detail</h4>
+        </div>
+
+        <div class="form-body">
+            <!-- Card Number -->
+            <input type="number" class="card-number" placeholder="Card Number">
+
+            <!-- Date Field -->
+            <div class="date-field">
+                <div class="month">
+                    <select name="Month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+                </div>
+                <div class="year">
+                    <select name="Year">
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
+                </div>
+            </div>
+
+            <!-- Card Verification Field -->
+            <div class="card-verification">
+                <div class="cvv-input">
+                    <input type="text" placeholder="CVV">
+                </div>
+                <div class="cvv-details">
+                    <p>3 or 4 digits usually found <br> on the signature strip</p>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+
+            <a class="bt" onclick="makePayment()" href=" completedOrder.html ">Proceed</a>
+
+
+        </div>
+    </form>
+
+
+
+
+
+    <hr>
+    <div class="list ">
+        <ul>
+            <h1 class="head2 ">Company</h1>
+            <li><a href="https://www.netmeds.com/about-us ">About Netmeds</a></li>
+            <li><a href="https://www.netmeds.com/testimonial ">Customers Speak</a></li>
+            <li><a href="https://www.netmeds.com/news ">In the News</a></li>
+            <li id="netmeds_career "><a href="https://netmeds.darwinbox.in/ms/candidate/careers ">Career</a></li>
+            <li><a href="https://www.netmeds.com/terms-and-conditions ">Terms and Conditions</a></li>
+            <li><a href="https://www.netmeds.com/privacy-policy ">Privacy Policy</a></li>
+            <li><a href="https://www.netmeds.com/fees-and-payments-policy ">Fees and Payments Policy</a></li>
+            <li><a href="https://www.netmeds.com/shipping-and-delivery-policy ">Shipping and Delivery Policy</a></li>
+            <li><a href="https://www.netmeds.com/return-refund-and-cancellation-policy ">Return, Refund and Cancellation Policy</a></li>
+            <li><a class="contact-link " href="https://www.netmeds.com/contact-us ">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="list ">
+        <ul>
+            <h1 class="head2 ">Shopping</h1>
+
+            <li><a href="https://www.netmeds.com/prescriptions ">Browse by A-Z</a></li>
+            <li><a href="https://www.netmeds.com/medicine/manufacturers ">Browse by Manufacturers</a></li>
+            <li><a href="https://www.netmeds.com/health-library ">Health Articles</a></li>
+            <li class="sbilabhide "><a href="https://www.netmeds.com/offers ">Offers / Coupons</a></li>
+            <li><a href="https://www.netmeds.com/faqs ">FAQs</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="list ">
+        <ul>
+
+            <h1 class="head2 ">Social</h1>
+            <li><a href="https://www.netmeds.com/patientsalike ">Patients Alike</a></li>
+            <li><a href="https://www.facebook.com/NetMeds/ ">Facebook</a></li>
+            <li><a href="https://twitter.com/NetMeds ">Twitter</a></li>
+            <li><a href="https://in.linkedin.com/company/netmeds-marketplace-limited ">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw ">Youtube</a></li>
+            <li><a href="https://www.netmeds.com/refer-earn ">Refer &amp; Earn</a></li>
+        </ul>
+    </div>
+
+    <div class="listt ">
+        <div class="subscribe ">
+            <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <p class="subtext ">Get a free subscription to our health and fitness tip and stay tuned to our latest offers
+            </p>
+        </div>
+        <input class="inp " name="newsletter_email " type="email " maxlength="50 " class="Required-newsletter-email validate-newsletter-emailid " id="newsletter_email " placeholder="Enter your email address ">
+        <button class="go-btn " type="submit ">Go</button>
+        <img class="foot " src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png ">
+        <img class="foot " src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png ">
+    </div>
+
+
+    <small class="copyright "> <div class="copyblock "> 
+        <div class="footer_link ">
+            <a href="https://www.netmeds.com/prescriptions ">Medicine</a></div>
+             <div class="footer_link ">
+                 <a href="https://www.netmeds.com/wellness ">Wellness</a>
+                </div>
+                 <div class="footer_link sbilabhide ">
+                     <a href="https://www.netmeds.com/health-packages ">Lab Tests</a>
+                    </div>
+                     <div class="footer_link "><a href="https://www.netmeds.com/beauty ">Beauty</a></div> <div class="copy-txt ">Copyright© 2021. All Rights Reserved.
+
+                     </div> </div> </small>
+
+
+
+</body>
+
+</html>
+
+<script>
+    function makePayment() {
+        setTimeout(function() {
+            alert("Payment Successful ");
+        }, 2000);
+    }
+</script>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cartofnetmeds.css">
+    <title>Cart</title>
+
+
+
+</head>
+
+<body>
+
+
+    <div id="longbox">
+
+        <div class="imgbox">
+         <a href="landingPage.html">    <img class="longimg" src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"></a>
+        </div>
+
+        <div id="search">
+            <select id="sel">
+                <option value = ""> Deliver to <span class="blue">1011100</span> 
+                </option>
+                <option  class="val" value = "Mercedes"> Mercedes 
+                </option>
+                <option value = "Mercedes"> Mercedes 
+                </option>
+
+                </select>
+            <p class="text">
+                Search for medicine &amp; wellness products…
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="order">Order Summary <span id="numprod">Total No. of Products </span></h2>
+
+    <div class="pri">
+
+        <div id="products">
+
+        </div>
+    </div>
+
+    <div class="detail">
+
+        <h4>Payment Details</h4>
+        <label>Grand Total</label>
+        <span id="total"></span>
+
+
+
+        <div id="prices">
+
+        </div>
+        <a href="payment.html"><button class="proceed">Proceed</button></a>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    let cartData = JSON.parse(localStorage.getItem("cart"))
+
+
+
+
+    let txt = document.getElementById('numprod')
+    let cart = JSON.parse(localStorage.getItem('cart'))
+
+    let spantext = document.createElement('span')
+    var len = cart.length;
+    spantext.innerHTML = " " + len;
+
+    txt.appendChild(spantext)
+
+
+    let total_h1 = document.getElementById("total")
+        //  let discount = document.getElementById("newtotal")
+    let parent = document.getElementById("products");
+    let count = 0;
+    cartData.forEach(function(product) {
+        count += Number(product.price)
+
+        console.log(product.price);
+        let div = document.createElement("div")
+
+        let product_price = document.createElement("p");
+        product_price.textContent = "Rs" + " " + product.price;
+
+
+
+
+        let product_name = document.createElement("p");
+        product_name.textContent = product.name;
+
+        let img = document.createElement("img");
+        img.src = product.img;
+
+        // let btn = document.createElement('button')
+        // btn.textContent = 'delete'
+
+        //btn.addEventListener("click", deleteIt)
+        div.append(img, product_name, product_price);
+        parent.append(div);
+
+
+    });
+    var inp = document.createElement('input')
+    var label = document.createElement('label')
+        //  label.textContent = "Enter Promo"
+        // inp.placeholder = "Enter Promo Here"
+    inp.setAttribute('id', 'inpp')
+
+    //
+
+    var bttn = document.createElement('button')
+    bttn.textContent = "Apply Promo"
+    bttn.addEventListener('click', discount)
+    var applied = document.createElement('div')
+
+    var totalprice = document.createElement('div')
+    prices.append(totalprice, applied, label, inp, bttn)
+    total_h1.textContent = +count
+
+
+    function discount() {
+        var a = document.getElementById('inpp').value
+        if (a.trim() === "netmeds") {
+            count = Number(count - (count * 30 / 100))
+            total_h1.textContent = "Discounted : " + Math.floor(count)
+            applied.textContent = "Coupon Applied"
+        } else {
+            alert('Enter Valid Promo')
+        }
+    }
+    total_h1.textContent = +count
+        //  console.log(discount)
+
+
+    //function deleteIt() {
+    // product.remove()
+    // console.log(product)
+    //}
+</script>
