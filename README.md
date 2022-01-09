@@ -1,3 +1,9 @@
+# Fronend-Masters_Clone_Project
+---
+This project is a clone of Frontend-Masters,an edu-tech company offering various courses for web Development,frontend offers abundant courses like javascript, vue, react with different tutors.
+Frontend Masters is an Edtech Website that lets users take courses related to frontend technologies like CSS, React, Angular, Vue, and many more. It has the ability to combining a simple user experience and interface with enough depth for power users.
+
+
 # CloneNetmed
 
 ---
