@@ -1,6 +1,11 @@
 # CloneNetmed
 
+---
+This project is a clone of Netmeds,an pharma company that operates over the Internet and sends orders to
+customers through mail, shipping companies, or an online pharmacy web portal.
+
 ## https://www.netmeds.com/
+
 ### [for Learning Purpose]
 
 ## Technologies Used :
