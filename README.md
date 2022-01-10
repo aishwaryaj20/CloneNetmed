@@ -39,10 +39,12 @@ customers through mail, shipping companies, or an online pharmacy web portal.
 ### Installation 
 * Clone the repository
     ``` 
-   https://github.com/aishwaryaj20/CourseraCloneUpdated
+   https://github.com/aishwaryaj20/CloneNetmed
     ```
 
+* Deploy Link
 
-
-
+  ``` 
+  https://aishwaryaj20.github.io/CloneNetmed/
+    ```
 
